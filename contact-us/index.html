@@ -87,9 +87,9 @@ window.scope_array = [];
 										}else{
 											return;
 										}
-										if(elementorFrontend.isEditMode() && $scope.find(".uael-particle-wrapper").hasClass("js-is-enabled") && window.backend == 0 ){		
+										if(elementorFrontend.isEditMode() && $scope.find(".uael-particle-wrapper").hasClass("js-is-enabled") && window.backend == 0 ){
 											var uael_url = uael_script.uael_particles_url;
-											
+
 											jQuery.cachedScript( uael_url );
 											window.backend = 1;
 										}else if(elementorFrontend.isEditMode()){
@@ -116,7 +116,7 @@ window.scope_array = [];
 										return jQuery.ajax( options );
 									};
 									jQuery.cachedScript( uael_url );
-								});	
+								});
 </script>
 <script type="text/javascript" src="./../wp-content/plugins/revslider/public/assets/js/rbtools.min.js?ver=6.3.3" id="tp-tools-js"></script>
 <script type="text/javascript" src="./../wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.3.3" id="revmin-js"></script>
@@ -124,7 +124,7 @@ window.scope_array = [];
 <link rel="https://api.w.org/" href="./../wp-json/index.html">
 <link rel="alternate" type="application/json" href="./../wp-json/wp/v2/pages/5631/index.html">
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="./../xmlrpc.php?rsd">
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="./../wp-includes/wlwmanifest.xml"> 
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="./../wp-includes/wlwmanifest.xml">
 <meta name="generator" content="WordPress 5.7.2">
 <link rel="canonical" href="./index.html">
 <link rel="shortlink" href="./../index.html?p=5631">
@@ -134,10 +134,10 @@ window.scope_array = [];
 <script type="text/javascript">/*<![CDATA[ */ try{Typekit.load();}catch(e){} /* ]]>*/</script>
 <meta name="generator" content="Powered by Slider Revolution 6.3.3 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface.">
 <script type="text/javascript">function setREVStartSize(e){
-			//window.requestAnimationFrame(function() {				 
-				window.RSIW = window.RSIW===undefined ? window.innerWidth : window.RSIW;	
-				window.RSIH = window.RSIH===undefined ? window.innerHeight : window.RSIH;	
-				try {								
+			//window.requestAnimationFrame(function() {
+				window.RSIW = window.RSIW===undefined ? window.innerWidth : window.RSIW;
+				window.RSIH = window.RSIH===undefined ? window.innerHeight : window.RSIH;
+				try {
 					var pw = document.getElementById(e.c).parentNode.offsetWidth,
 						newh;
 					pw = pw===0 || isNaN(pw) ? window.RSIW : pw;
@@ -147,35 +147,35 @@ window.scope_array = [];
 					e.thumbh = e.thumbh===undefined ? 0 : parseInt(e.thumbh);
 					e.tabhide = e.tabhide===undefined ? 0 : parseInt(e.tabhide);
 					e.thumbhide = e.thumbhide===undefined ? 0 : parseInt(e.thumbhide);
-					e.mh = e.mh===undefined || e.mh=="" || e.mh==="auto" ? 0 : parseInt(e.mh,0);		
-					if(e.layout==="fullscreen" || e.l==="fullscreen") 						
-						newh = Math.max(e.mh,window.RSIH);					
-					else{					
+					e.mh = e.mh===undefined || e.mh=="" || e.mh==="auto" ? 0 : parseInt(e.mh,0);
+					if(e.layout==="fullscreen" || e.l==="fullscreen")
+						newh = Math.max(e.mh,window.RSIH);
+					else{
 						e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
-						for (var i in e.rl) if (e.gw[i]===undefined || e.gw[i]===0) e.gw[i] = e.gw[i-1];					
+						for (var i in e.rl) if (e.gw[i]===undefined || e.gw[i]===0) e.gw[i] = e.gw[i-1];
 						e.gh = e.el===undefined || e.el==="" || (Array.isArray(e.el) && e.el.length==0)? e.gh : e.el;
 						e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
 						for (var i in e.rl) if (e.gh[i]===undefined || e.gh[i]===0) e.gh[i] = e.gh[i-1];
-											
+
 						var nl = new Array(e.rl.length),
-							ix = 0,						
-							sl;					
+							ix = 0,
+							sl;
 						e.tabw = e.tabhide>=pw ? 0 : e.tabw;
 						e.thumbw = e.thumbhide>=pw ? 0 : e.thumbw;
 						e.tabh = e.tabhide>=pw ? 0 : e.tabh;
-						e.thumbh = e.thumbhide>=pw ? 0 : e.thumbh;					
+						e.thumbh = e.thumbhide>=pw ? 0 : e.thumbh;
 						for (var i in e.rl) nl[i] = e.rl[i]<window.RSIW ? 0 : e.rl[i];
-						sl = nl[0];									
-						for (var i in nl) if (sl>nl[i] && nl[i]>0) { sl = nl[i]; ix=i;}															
-						var m = pw>(e.gw[ix]+e.tabw+e.thumbw) ? 1 : (pw-(e.tabw+e.thumbw)) / (e.gw[ix]);					
+						sl = nl[0];
+						for (var i in nl) if (sl>nl[i] && nl[i]>0) { sl = nl[i]; ix=i;}
+						var m = pw>(e.gw[ix]+e.tabw+e.thumbw) ? 1 : (pw-(e.tabw+e.thumbw)) / (e.gw[ix]);
 						newh =  (e.gh[ix] * m) + (e.tabh + e.thumbh);
-					}				
-					if(window.rs_init_css===undefined) window.rs_init_css = document.head.appendChild(document.createElement("style"));					
+					}
+					if(window.rs_init_css===undefined) window.rs_init_css = document.head.appendChild(document.createElement("style"));
 					document.getElementById(e.c).height = newh+"px";
-					window.rs_init_css.innerHTML += "#"+e.c+"_wrapper { height: "+newh+"px }";				
+					window.rs_init_css.innerHTML += "#"+e.c+"_wrapper { height: "+newh+"px }";
 				} catch(e){
 					console.log("Failure at Presize of Slider:" + e)
-				}					   
+				}
 			//});
 		  };</script>
 		<style type="text/css" id="wp-custom-css">.home #main.content-area {
@@ -219,7 +219,7 @@ window.scope_array = [];
 <li class="menu-item menu-item-has-children parent parent-has-no-child elementor-repeater-item-ad39e2d" data-dropdown-width="default" data-dropdown-pos="left"><div class="uael-has-submenu-container"><a href="https://www.mago.tn/sustainability/" class="uael-menu-item">SUSTAINABILITY<span class="uael-menu-toggle sub-arrow parent-item"><i class="fa"></i></span></a></div></li>
 <li class="menu-item menu-item-has-children parent parent-has-no-child elementor-repeater-item-40eb471" data-dropdown-width="default" data-dropdown-pos="left"><div class="uael-has-submenu-container"><a href="https://www.mago.tn/contact-us/" class="uael-menu-item">CONTACT US<span class="uael-menu-toggle sub-arrow parent-item"><i class="fa"></i></span></a></div></li>
 </ul>		</nav>
-								
+
 		</div>
 					</div>
 				</div>
@@ -229,12 +229,12 @@ window.scope_array = [];
 		</section>
 				</div>
 		</div>
-		
-	 
 
-						
-			
-								
+
+
+
+
+
 						<div data-elementor-type="wp-page" data-elementor-id="5631" class="elementor elementor-5631" data-elementor-settings="[]">
 							<div class="elementor-section-wrap">
 							<section class="elementor-section elementor-top-section elementor-element elementor-element-ca098be elementor-section-full_width elementor-section-height-min-height elementor-section-height-default elementor-section-items-middle default-style" data-id="ca098be" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;rt_color_sets&quot;:&quot;default-style&quot;,&quot;_ha_eqh_enable&quot;:false}">
@@ -244,7 +244,7 @@ window.scope_array = [];
 			<div class="elementor-widget-wrap elementor-element-populated">
 								<div class="elementor-element elementor-element-f01cd47 ha-layout-block ha-align-center ha-align-left elementor-widget elementor-widget-ha-advanced-heading happy-addon ha-advanced-heading happy-addon-pro" data-id="f01cd47" data-element_type="widget" data-widget_type="ha-advanced-heading.default">
 				<div class="elementor-widget-container">
-			
+
 		<h2 class="ha-advanced-heading-tag">
 						<div class="ha-advanced-heading-wrap" data-background-text="">
 				<span class="ha-advanced-heading-before">CONTACT US</span>
@@ -266,7 +266,7 @@ window.scope_array = [];
 			<div class="elementor-widget-wrap elementor-element-populated">
 								<div class="elementor-element elementor-element-8f99c94 ha-align-center ha-layout-inline elementor-widget elementor-widget-ha-advanced-heading happy-addon ha-advanced-heading happy-addon-pro" data-id="8f99c94" data-element_type="widget" data-widget_type="ha-advanced-heading.default">
 				<div class="elementor-widget-container">
-			
+
 		<h2 class="ha-advanced-heading-tag">
 						<div class="ha-advanced-heading-wrap" data-background-text="">
 				<span class="ha-advanced-heading-before">CONTACT  </span>
@@ -302,7 +302,7 @@ window.scope_array = [];
 <div class="screen-reader-response">
 <p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul>
 </div>
-<form action="./index.html#wpcf7-f5583-p5631-o1" method="post" class="wpcf7-form init" novalidate="novalidate" data-status="init">
+<form class="wpcf7-form init" novalidate="novalidate" data-status="init" netlify>
 <div style="display: none;">
 <input type="hidden" name="_wpcf7" value="5583">
 <input type="hidden" name="_wpcf7_version" value="5.4">
@@ -337,13 +337,13 @@ window.scope_array = [];
 		</section>
 						</div>
 					</div>
-									
 
-				
 
-				
 
-	 
+
+
+
+
 		<div data-elementor-type="footer" data-elementor-id="7333" class="elementor elementor-7333 elementor-location-footer" data-elementor-settings="[]">
 		<div class="elementor-section-wrap">
 					<section class="elementor-section elementor-top-section elementor-element elementor-element-2d6e9d2 elementor-section-boxed elementor-section-height-default elementor-section-height-default default-style" data-id="2d6e9d2" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;rt_color_sets&quot;:&quot;default-style&quot;,&quot;_ha_eqh_enable&quot;:false}">
@@ -504,7 +504,7 @@ window.scope_array = [];
 		</section>
 				</div>
 		</div>
-		
+
 <div class="rt-popup rt-popup-search">
 	<div class="rt-popup-content-wrapper d-flex align-items-center">
 		<button class="rt-popup-close ui-icon-exit"></button>
@@ -520,12 +520,12 @@ window.scope_array = [];
 
 		</div>
 	</div>
-</div>	
+</div>
 	<div class="rt-popup rt-popup-share">
 		<div class="rt-popup-content-wrapper d-flex align-items-center">
 			<button class="rt-popup-close ui-icon-exit"></button>
 			<div class="rt-popup-content default-style">
-				<div class="naturalife-share-content">				
+				<div class="naturalife-share-content">
 					<ul></ul>
 				</div>
 			</div>
@@ -534,20 +534,20 @@ window.scope_array = [];
 	<div class="naturalife-panel-holder">
 	<div class="naturalife-panel-wrapper">
 		<div class="naturalife-panel-contents">
-		 
-						
-	
+
+
+
 				<nav class="mobile-nav">
 					<ul id="mobile-navigation" class="menu">
 <li id="mobile-menu-item-6558" data-col-size="3" data-depth="0" class="multicolumn-3 menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-has-children multicolumn">
-<a href="./../index.html"><span>HOME</span></a> 
+<a href="./../index.html"><span>HOME</span></a>
 <ul class="sub-menu">
 <li id="mobile-menu-item-6155" data-depth="1" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home">
 <a href="./../index.html">Home Page I</a> </li>
 </ul>
 </li>
 <li id="mobile-menu-item-6143" data-col-size="2" data-depth="0" class="multicolumn-2 menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children multicolumn">
-<a href="#"><span>ABOUT</span></a> 
+<a href="#"><span>ABOUT</span></a>
 <ul class="sub-menu">
 <li id="mobile-menu-item-6576" data-depth="1" class="menu-item menu-item-type-post_type menu-item-object-page">
 <a href="./../about-us/index.html">About Us</a> </li>
@@ -560,14 +560,14 @@ window.scope_array = [];
 </ul>
 </li>
 <li id="mobile-menu-item-6142" data-col-size="2" data-depth="0" class="multicolumn-2 menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children multicolumn">
-<a href="#"><span>SHOP</span></a> 
+<a href="#"><span>SHOP</span></a>
 <ul class="sub-menu">
 <li id="mobile-menu-item-6578" data-depth="1" class="menu-item menu-item-type-post_type menu-item-object-page">
 <a href="./../products/index.html">Products</a> </li>
 </ul>
 </li>
 <li id="mobile-menu-item-6148" data-col-size="2" data-depth="0" class="multicolumn-2 menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children multicolumn">
-<a href="#"><span>BLOG</span></a> 
+<a href="#"><span>BLOG</span></a>
 <ul class="sub-menu">
 <li id="mobile-menu-item-6138" data-depth="1" class="menu-item menu-item-type-custom menu-item-object-custom">
 <a href="#">Blog Lists</a> </li>
@@ -576,7 +576,7 @@ window.scope_array = [];
 </ul>
 </li>
 <li id="mobile-menu-item-6144" data-col-size="2" data-depth="0" class="multicolumn-2 menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children multicolumn">
-<a href="#"><span>ELEMENTS</span></a> 
+<a href="#"><span>ELEMENTS</span></a>
 <ul class="sub-menu">
 <li id="mobile-menu-item-6150" data-depth="1" class="menu-item menu-item-type-custom menu-item-object-custom">
 <a href="#">Dynamic Modules</a> </li>
@@ -596,10 +596,10 @@ window.scope_array = [];
 <a href="#"><span>Grid Layouts</span></a> </li>
 <li id="mobile-menu-item-6141" data-depth="0" class="menu-item menu-item-type-custom menu-item-object-custom">
 <a href="#"><span>Single Pages</span></a> </li>
-</ul>    
+</ul>
 				</nav>
 
-						
+
 		<div class="side-panel-widgets-desktop">
 <div id="media_image-2" class="sidebar-widget widget widget_media_image"><img class="image " src="https://naturalife.rtthemes.com/demo/wp-content/uploads/sites/2/2018/02/logo-dark-2x-167x40.png" alt="" width="334" height="80"></div>
 <div id="text-2" class="sidebar-widget widget widget_text">			<div class="textwidget">
@@ -768,7 +768,7 @@ window.scope_array = [];
 										return jQuery.ajax( options );
 									};
 									jQuery.cachedScript( ha_url );
-								});	
+								});
 </script>
 <script type="text/javascript" src="./../wp-content/plugins/elementor-pro/assets/js/preloaded-elements-handlers.min.js?ver=3.2.1" id="pro-preloaded-elements-handlers-js"></script>
 <script type="text/javascript" src="./../wp-content/plugins/elementor/assets/js/preloaded-modules.min.js?ver=3.2.2" id="preloaded-modules-js"></script>
